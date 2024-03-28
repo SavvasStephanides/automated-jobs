@@ -26,5 +26,8 @@ jobs:
             
             npm install
             cd src/modules/data
+            node populateGames.js
+            cd ../../..
             ls
+            git status
             
