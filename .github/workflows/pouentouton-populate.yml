@@ -30,4 +30,8 @@ jobs:
             cd ../../..
             ls
             git status
+
+            git add -A
+            git commit -m "[🤖 AutomatedJobs] Populate village of the day"
+            git push --all -f https://${{ secrets.GH_TOKEN }}@github.com/SavvasStephanides/savvas.git
             
