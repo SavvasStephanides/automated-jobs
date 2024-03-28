@@ -1,11 +1,10 @@
 name: Pou en touton - Populate
 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * *'
+    # ^ This cron expression triggers the action at 00:00 (midnight) every day
+
 
 jobs:
   build:
