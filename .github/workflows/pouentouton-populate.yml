@@ -27,8 +27,6 @@ jobs:
             cd src/modules/data
             node populateGames.js
             cd ../../..
-            ls
-            git status
 
             git add -A
             git commit -m "[🤖 AutomatedJobs] Populate village of the day"
